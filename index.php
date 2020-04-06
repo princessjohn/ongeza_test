@@ -8,7 +8,7 @@ $crud = new Crud();
 
 //fetching data in descending order (lastest entry first)
 $query = "SELECT c.id,c.first_name,c.last_name,c.town_name,
-g.gender_name FROM customer c, gender g where c.gender_id=g.id ORDER BY id DESC";
+g.gender_name FROM customer c, gender g where c.gender_id=g.id AND is_deleted=0 ORDER BY id DESC";
 
 $result = $crud->getData($query);
 ?>
