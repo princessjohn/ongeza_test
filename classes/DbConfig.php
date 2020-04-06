@@ -5,7 +5,7 @@ class DbConfig
     
     private $_host = 'localhost';
     private $_username = 'root';
-    private $_password = 'Janeth**2014';
+    private $_password = '';
     private $_database = 'ongeza_test';
     
     protected $connection;
